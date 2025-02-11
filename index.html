@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Pizza Rayan Guide</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <h1 class="logo">Pizza Rayan</h1>
+            <div class="menu-toggle">☰</div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Master the Art of Pizza Making</h1>
+            <p><b><i>Authentic Italian recipes and professional techniques to create restaurant-quality pizzas at home</i></b></p>
+            <a href="#featured" class="styled-button">Featured Pizzas</a>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <div id="featured">
+        <h1>Featured Pizza</h1>
+    </div>
+    
+    <div class="fea-container">
+        <div class="fea-img">
+            <img src="Images/ClassicNeapolitan-index.jpg" alt="Classic Neapolitan Pizza">
+        </div>
+        <div class="fea-txt">
+            <h1>Classic Neapolitan</h1>
+            <p>Neapolitan style pizza is known for its simplicity. You won't find anything more than fresh basil and mozzarella, olive oil, tomatoes, and a simple wheat dough in this historic pizza pie. Cooks and foodies are passionate about Neapolitan pizza because it's all about the ingredients</p>
+        </div>
+    </div>
+
+    <div class="fea-container">
+        <div class="fea-img">
+            <img src="Images/New-York-Style-index.jpg" alt="New York Style Pizza">
+        </div>
+        <div class="fea-txt">
+            <h1>New York Style</h1>
+            <p>New-York style pies are often easily distinguishable because of their extra-large and thin crust. The crust isn't as chewy as that in the traditional pie. Because the base isn't as complex as that of traditional pizzas, it is the perfect backdrop for loading up on layers of toppings and cheese.</p>
+        </div>
+    </div>
+
+    <div class="fea-container">
+        <div class="fea-img">
+            <img src="Images/Sicilian-Style-index.jpg" alt="Sicilian Style Pizza">
+        </div>
+        <div class="fea-txt">
+            <h1>Sicilian Style</h1>
+            <p>In the United States, "Sicilian pizza" is used to describe a typically square variety of cheese pizza with dough over an inch thick, a crunchy base, and an airy interior. It is derived from the sfincione and was introduced in the United States by the first Italian (Sicilian) immigrants.</p>
+        </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Get Weekly Pizza Recipes</h2>
+        <p>Subscribe to receive exclusive recipes and professional tips.</p>
+        <form class="newsletter-form" id="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <b>© Copyright RAYAN YOUNES - All Rights Reserved 2025</b>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Newsletter form submission
+        document.getElementById('newsletter-form').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const email = event.target.querySelector('input[type="email"]').value;
+            alert(`Hello ${email}\nThank you for subscribing to our channel🌹.\nYou'll get notifications about any update.`);
+            event.target.reset();
+        });
+    </script>
+</body>
+</html>     

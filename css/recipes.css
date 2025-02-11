@@ -1,0 +1,76 @@
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: #dfdfdf;
+    font-family: Arial, sans-serif;
+}
+
+.ytvid {
+    padding-top: 30px;
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.container h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+#slimPic {
+    margin-top: 20px;
+    height: 20em;
+    width: 100%;
+    padding: 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../Images/recipes-img.jpg);
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #659287;
+}
+
+@media (max-width: 768px) {
+    .container h1 {
+        padding-top: 80px;
+        font-size: 2.2rem;
+    }
+
+    .ttle {
+        margin-top: 50px;
+    }
+
+    #slimPic {
+        height: 15em;
+    }
+
+    .ytvid {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1 {
+        padding-top: 60px;
+        font-size: 1.8rem;
+    }
+
+    #slimPic {
+        height: 10em;
+    }
+
+    .ytvid {
+        padding-top: 15px;
+    }
+}
